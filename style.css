@@ -1,0 +1,10 @@
+body{
+    background: #000;
+}
+.container{
+    width: 1440px;
+    height: 3818px;
+    background: #FFF;
+    margin: 0 auto;
+    border-radius: 50%;
+}
