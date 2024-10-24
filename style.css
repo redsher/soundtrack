@@ -1,8 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-body {
-    background: #000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    background: #fff;
+}
+
 .container {
     width: 1440px;
     height: 3818px;
@@ -11,65 +18,80 @@ body {
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    height: 100px;
     width: 100%;
+    height: 100px;
+    display: flex;
     justify-content: end;
     align-items: center;
     padding-left: 30px;
+
 }
 
-.img-1 {
-    /* margin-top: 34px;
-    margin-left: 60px;
-    display: block;
-    width: 148px;
-    height: 30px; */
-    gap: 8px;
+.logo {
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: space-between;
-    margin-right: 94px;
 }
-/* .nav{
-    margin-top: 42px;
-    margin-left: 70px;
-    display: flex;
-    gap: 49px;
-    width: 100%;
-    font-size: 13px;
-    font-family: Poppins;
 
-} */
+.circle {
+    font-size: 12px;
+    font-weight: 700;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soundtrack {
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+    letter-spacing: 1px;
+}
 
 .nav {
     display: flex;
     gap: 60px;
+    font-family: 'Poppins', sans-serif;
     font-size: 13px;
     font-weight: 400;
-    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.5px;
 }
 
-.button {
+.nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+.buttons {
     display: flex;
-    gap: 121px;
+    gap: 60px;
+    font-family: 'Poppins', sans-serif;
     font-size: 13px;
     font-weight: 600;
-    font-family: "Poppins", sans-serif;
+    color: #553C16;
+    letter-spacing: 0.5px;
 }
 
-.button-1 {
+.button.s {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 520px;
+    margin-left: 589px;
 }
 
-.button-2 {
+.button.gray {
     width: 160px;
     height: 100px;
-    background: rgba(245, 242, 236, 1);
-    border-radius: 0 0 0 40%;
+    background: #F5F2EC;
+    border-radius: 0 0 0 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,31 +99,123 @@ body {
 
 .main {
     position: relative;
-    width: 1360px;
+    width: 100%;
     height: 900px;
-    background: #ad9595;
+    padding-left: 130px;
+    margin-top: 80px;
 }
 
-.title{
-    position: relative;
+.main>.photos {
+    position: absolute;
+}
+
+.title {
     width: 498px;
     height: 302px;
-    background: #756565;
-    z-index: 1;
-}
-.email-box{
-    position: relative;
-    width: 692px;
-    height: 123px;
-    background: #b8add3;
-    z-index: 1;
 }
 
-.photos{
-    position: absolute;
+.section-title {
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: -0.5000000596046448px;
+    text-align: left;
+}
+
+.title-info {
+    width: 405px;
+    height: 52px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.5000000596046448px;
+    text-align: left;
+    margin-top: 34px;
+    color: #21383E;
+}
+
+.email-box {
+    box-shadow: 0 4px 10px #0000001a;
+    position: relative;
+    display: flex;
+    width: 682px;
+    height: 123px;
+    gap: 151px;
+    justify-content: center;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 1;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.email-box .wrapper {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.email-box p {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+    color: #7D8186;
+}
+
+.email-box .email {
+
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.23000000417232513px;
+    text-align: left;
+}
+
+.email-box>button {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0.32307693362236023px;
+    text-align: center;
+    width: 190px;
+    height: 67px;
+    border-radius: 10px;
+    background: #725BA1;
+    border: none;
+    color: #fff;
+}
+
+.photos {
+    display: flex;
+    align-items: center;
     width: 1220px;
-    height: 892px;
-    background: #d8b8d8;
+    height: 890px;
+    margin-top: 10px;
     top: 0;
     right: 0;
+}
+
+.photos img:nth-child(1) {
+    align-self: flex-end;
+}
+
+.photos img:nth-child(2) {
+    align-self: flex-start;
+}
+
+.photos img:nth-child(3) {
+    margin-top: 215px;
+}
+.dot{
+    position: absolute;
+    left: 80px;
+    top: 423px;
 }
